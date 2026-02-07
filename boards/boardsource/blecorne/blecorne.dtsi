@@ -22,7 +22,6 @@
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
         zmk,kscan = &kscan0;
-        zephyr,console = &cdc_acm_uart;
         zmk,physical-layout = &foostan_corne_6col_layout;
     };
 
@@ -57,13 +56,6 @@
 
 &gpio1 {
     status = "okay";
-};
-
-&usbd {
-    status = "okay";
-    cdc_acm_uart: cdc_acm_uart {
-        compatible = "zephyr,cdc-acm-uart";
-    };
 };
 
 zephyr_udc0: &usbd {
