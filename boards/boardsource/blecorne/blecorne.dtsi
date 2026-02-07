@@ -40,6 +40,13 @@
                                 RC(3,3) RC(3,4) RC(3,5)  RC(3,6) RC(3,7) RC(3,8)
         >;
     };
+
+    leds {
+        compatible = "gpio-leds";
+        blue_led: led_0 {
+            gpios = <&gpio1 9 GPIO_ACTIVE_HIGH>;
+        };
+    };
 };
 
 &adc {
