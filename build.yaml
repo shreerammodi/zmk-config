@@ -1,12 +1,8 @@
-# Uncomment the 'shield: nice_view' lines below if you are using nice!view displays.
-# Additionally, you should enable the display feature in 'config/blecorne.conf'.
 ---
 include:
   - board: blecorne_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    # shield: nice_view
+    shield: settings_reset
   - board: blecorne_right
-    # shield: nice_view
-  - board: nice_nano
     shield: settings_reset
